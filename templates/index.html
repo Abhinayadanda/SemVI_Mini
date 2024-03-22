@@ -1,0 +1,55 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predict CPU Usage</title>
+  </head>
+  <body>
+    <h1>Predict CPU Usage</h1>
+    <form action="/predict" method="post">
+      <label for="process_name">Process Name:</label>
+      <input type="text" id="process_name" name="process_name" /><br /><br />
+      <label for="memory_usage">Memory Usage:</label>
+      <input type="text" id="memory_usage" name="memory_usage" /><br /><br />
+      <label for="disk_write_bytes">Disk Write Bytes:</label>
+      <input
+        type="text"
+        id="disk_write_bytes"
+        name="disk_write_bytes"
+      /><br /><br />
+      <label for="network_sent_bytes">Network Sent Bytes:</label>
+      <input
+        type="text"
+        id="network_sent_bytes"
+        name="network_sent_bytes"
+      /><br /><br />
+      <label for="system_cpu_usage">System CPU Usage:</label>
+      <input
+        type="text"
+        id="system_cpu_usage"
+        name="system_cpu_usage"
+      /><br /><br />
+      <label for="system_memory_usage">System Memory Usage:</label>
+      <input
+        type="text"
+        id="system_memory_usage"
+        name="system_memory_usage"
+      /><br /><br />
+      <label for="system_disk_write_bytes">System Disk Write Bytes:</label>
+      <input
+        type="text"
+        id="system_disk_write_bytes"
+        name="system_disk_write_bytes"
+      /><br /><br />
+      <label for="system_network_sent_bytes">System Network Sent Bytes:</label>
+      <input
+        type="text"
+        id="system_network_sent_bytes"
+        name="system_network_sent_bytes"
+      /><br /><br />
+      <input type="submit" value="Predict" />
+    </form>
+  </body>
+</html>
