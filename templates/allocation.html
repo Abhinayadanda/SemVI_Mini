@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <title>Predict CPU Usage</title>
+  </head>
+<body>
+<h1>Resource Allocation</h1>
+    <form action="/allocate" method="post">
+      <label for="cpu_demand">CPU Demand:</label>
+      <input type="text" id="cpu_demand" name="cpu_demand" /><br /><br />
+      <label for="memory_demand">Memory Demand:</label>
+      <input type="text" id="memory_demand" name="memory_demand" /><br /><br />
+      <input type="submit" value="Allocate" />
+    </form>
+</body>
+</html>
